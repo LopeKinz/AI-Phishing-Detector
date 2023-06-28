@@ -36,6 +36,8 @@ python AI-Phishing.py
 4. The script will print the URL and the phishing result (True/False) obtained from the API.
 5. If the URL is determined to be a phishing URL, it will retrieve the IP address and save it to the `database.json` file.
 
+
+## AI Responses
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
