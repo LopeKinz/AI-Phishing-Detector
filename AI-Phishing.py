@@ -1,13 +1,10 @@
 import urllib.request
 import socket
-
+import g4f
 # Function to interact with the ChatGPT API
 def chat_with_gpt(prompt):
-    api_key = 'YOUR_API_KEY'  # Replace with your actual API key
-    headers = {'Authorization': f'Bearer {api_key}'}
-    data = {'prompt': prompt, 'max_tokens': 1}
-
-    response = requests.post('https://api.openai.com/v1/engines/davinci-codex/completions', headers=headers, json=data)
+    response = g4f.ChatCompletion.create(model=g4f.Model.gpt_4, messages=[
+                                     {"role": "user", "content": prompt}])
     response_json = response.json()
     return response_json['choices'][0]['text'].strip()
 
