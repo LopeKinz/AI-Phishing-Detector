@@ -37,7 +37,8 @@ python AI-Phishing.py
 5. If the URL is determined to be a phishing URL, it will retrieve the IP address and save it to the `database.json` file.
 
 
-## AI Responses
+## AI Responses & Proof of Concept
+![alt text](https://github.com/LopeKinz/AI-Phishing-Detector/blob/main/IMG_2426.png?raw=true)
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
